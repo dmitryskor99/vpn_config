@@ -15,8 +15,9 @@
 8. Состояние сервера	Предпочтительно свежая установка ОС без существующей контейнерной инфраструктуры
 
 
-1. скрипт - install-docker.sh: Скрипт устанавливает Docker и Docker Compose на Ubuntu 22.04 amd64, включает автозапуск и проверяет работу тестовым контейнером.
-2. Установка
+# скрипт - install-docker.sh
+Скрипт устанавливает Docker и Docker Compose на Ubuntu 22.04 amd64, включает автозапуск и проверяет работу тестовым контейнером.
+Установка
 ```curl -fL --proto '=https' \
   'https://raw.githubusercontent.com/USER/REPO/main/install-docker.sh' \
   -o install-docker.sh &&
