@@ -38,8 +38,31 @@ bash install-docker.sh
 # Перенос архива с копиями на сервер
 Копии лежат `/Users/dmitrii_skor/Documents/vpn-backups`
 
+На амстердам:
+```
+printf 'Введи IP нового сервера Амстердама: '
+read -r AMS_IP
+scp ~/Documents/vpn-backups/amsterdam-20261020T235615Z.tar.gz "root@${AMS_IP}:/root/"
+```
+На РФ:
+```
+printf 'Введи IP нового российского сервера: '
+read -r RU_IP
+scp ~/Documents/vpn-backups/russia-20261020T235530Z.tar.gz "root@${RU_IP}:/root/"
+```
+
 # restore-amsterdam.sh 
 восстанавливает выходной сервер, сохраняет ключи и выдаёт команду переключения российского узла на новый IP.
+```
+apt-get update && apt-get install -y curl python3 &&
+curl -fL https://raw.githubusercontent.com/dmitryskor99/vpn_config/main/restore-amsterdam.sh -o /root/restore-amsterdam.sh &&
+bash /root/restore-amsterdam.sh /root/amsterdam-20261020T235615Z.tar.gz
+```
 
 # restore-russia.sh 
 восстанавливает панель, клиентов, HTTPS и соединение с Амстердамом.
+```
+apt-get update && apt-get install -y curl python3 &&
+curl -fL https://raw.githubusercontent.com/dmitryskor99/vpn_config/main/restore-russia.sh -o /root/restore-russia.sh &&
+bash /root/restore-russia.sh /root/russia-20261020T235530Z.tar.gz
+```
