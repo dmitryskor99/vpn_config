@@ -62,3 +62,5 @@ apt-get update && apt-get install -y curl python3 &&
 curl -fL https://raw.githubusercontent.com/dmitryskor99/vpn_config/main/restore-russia.sh -o /root/restore-russia.sh &&
 bash /root/restore-russia.sh /root/russia-20261020T235530Z.tar.gz
 ```
+
+# Проверка текущего ip на устройстве
