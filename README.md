@@ -24,4 +24,4 @@
 ```curl -fL --proto '=https' \
   'https://raw.githubusercontent.com/dmitryskor99/vpn_config/main/install-docker.sh' \
   -o install-docker.sh &&
-bash install-docker.sh```
+bash install-docker.sh
