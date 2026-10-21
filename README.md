@@ -64,3 +64,4 @@ bash /root/restore-russia.sh /root/russia-20261020T235530Z.tar.gz
 ```
 
 # Проверка текущего ip на устройстве
+https://api.ipify.org/
