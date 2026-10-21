@@ -40,9 +40,7 @@ bash install-docker.sh
 
 На амстердам:
 ```
-printf 'Введи IP нового сервера Амстердама: '
-read -r AMS_IP
-scp ~/Documents/vpn-backups/amsterdam-20261020T235615Z.tar.gz "root@${AMS_IP}:/root/"
+scp ~/Documents/vpn-backups/amsterdam-20261020T235615Z.tar.gz root@IP_НОВОГО_СЕРВЕРА:/root/
 ```
 На РФ:
 ```
