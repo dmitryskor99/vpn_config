@@ -44,9 +44,7 @@ scp ~/Documents/vpn-backups/amsterdam-20261020T235615Z.tar.gz root@IP_НОВОГ
 ```
 На РФ:
 ```
-printf 'Введи IP нового российского сервера: '
-read -r RU_IP
-scp ~/Documents/vpn-backups/russia-20261020T235530Z.tar.gz "root@${RU_IP}:/root/"
+scp ~/Documents/vpn-backups/russia-20261020T235530Z.tar.gz root@IP_НОВОГО_СЕРВЕРА:/root/
 ```
 
 # restore-amsterdam.sh 
