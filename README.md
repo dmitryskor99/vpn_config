@@ -22,6 +22,6 @@
 Скрипт устанавливает Docker и Docker Compose на Ubuntu 22.04 amd64, включает автозапуск и проверяет работу тестовым контейнером.
 Установка
 ```curl -fL --proto '=https' \
-  'https://raw.githubusercontent.com/USER/REPO/main/install-docker.sh' \
+  'https://raw.githubusercontent.com/dmitryskor99/vpn_config/main/install-docker.sh' \
   -o install-docker.sh &&
 bash install-docker.sh```
